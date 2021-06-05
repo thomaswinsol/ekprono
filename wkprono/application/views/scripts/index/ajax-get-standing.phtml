@@ -1,0 +1,42 @@
+﻿<?php 
+         if (!empty($this->result)) {
+         ?>
+         <?php for ($ii=1; $ii<=8; $ii++) { ?>
+                 <?php if ($ii==5) { ?>
+                 <div style="clear:both;"></div>
+                 <?php } ?>
+                 <div style="float:left;margin-right:25px;">
+                 
+                 
+                 <?php
+                 if (!empty($this->result[$ii])) {
+                 ?>
+                 <div class="hoofding">Groep <?php echo $this->groep[$ii-1];?></div>
+                 <table style="width:150px;white-space:nowrap;">
+                 <tr>
+                         <td></td>
+                         <td>Team</td>
+                         <td style="text-align:right;">PTS</td>
+                 </tr>
+                 <?php
+                 foreach ($this->result[$ii] as $r) {
+                 ?>
+                 <tr>
+                         <td>
+                         <?php $img = str_replace("ë","e", $r['Team']);?>
+			 <img width='24'  src='/wkprono/public/images/vlaggen/<?php echo trim($img);?>.png'">
+                         </td>                      
+                         <td><?php echo $r['Team']; ?></td>
+                         <td style="text-align:right;"><?php echo $r['Pts']; ?></td>
+                 
+                 </tr>                 
+                 <?php
+                 } 
+                 ?>
+                 </table>
+                 <?php } ?>
+                 </div>
+          <?php } ?>
+          <?php
+          }
+?>
