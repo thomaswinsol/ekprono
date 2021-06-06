@@ -6,7 +6,7 @@
 abstract class My_Controller_Action extends Zend_Controller_Action
 {
     protected $context;
-    protected $baseUrl='/wkprono/public';
+    protected $baseUrl='/ekprono/wkprono/public';
     protected $flashMessenger = NULL;
     protected $mail;
     

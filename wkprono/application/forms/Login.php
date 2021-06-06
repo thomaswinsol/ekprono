@@ -7,7 +7,7 @@ class Application_Form_Login extends My_Form {
         //$this->setAttrib('enctype', 'multiparts/form-data');
         $this->setAttrib('enctype', Zend_Form::ENCTYPE_MULTIPART);
 
-        $this->setAction('/wkprono/public/gebruiker/login');
+        $this->setAction('/ekprono/wkprono/public/gebruiker/login');
 
         // element naam
         $this->addElement(new Zend_Form_Element_Text('email',array(

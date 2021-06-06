@@ -21,7 +21,7 @@ class My_Controller_Plugin_Navigation extends Zend_Controller_Plugin_Abstract
          //array ( 'label'=> 'Wedstrijden','module'=>'default', 'action'=> 'wedstrijden', 'controller'=> 'index', 'params'=> array() ),
          array ( 'label'=> 'Pronostikeer', 'module'=>'default', 'action'=> 'prono', 'controller'=> 'index', 'params'=> array() ),
          array ( 'label'=> 'Spelregels', 'module'=>'default', 'action'=> 'spelregels', 'controller'=> 'index', 'params'=> array() ),
-         //array ( 'label'=> 'Klassement', 'module'=>'default', 'action'=> 'klassement', 'controller'=> 'index', 'params'=> array() ),
+         array ( 'label'=> 'Klassement', 'module'=>'default', 'action'=> 'klassement', 'controller'=> 'index', 'params'=> array() ),
          array ( 'label'=> 'Deelnemers', 'module'=>'default', 'action'=> 'deelnemers', 'controller'=> 'index', 'params'=> array() ),
          array ( 'label'=> 'Admin', 	 'module'=>'default', 'action'=> 'index', 	   'controller'=> 'admin', 'params'=> array() ),
         );

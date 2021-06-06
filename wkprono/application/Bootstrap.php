@@ -34,12 +34,12 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
                 $view = new Zend_View();
                 $jqueryTheme = 'smoothness';
 				$view->addHelperPath("ZendX/JQuery/View/Helper", "ZendX_JQuery_View_Helper");
-                //$view->jQuery()->addStylesheet('/wkprono/public/base/js/jquery/css/'.$jqueryTheme.'/jquery-ui-1.10.2.custom.min.css');
-                //$view->jQuery()->setLocalPath('/wkprono/public/base/js/jquery/jquery-1.9.1.js');
-                //$view->jQuery()->setUiLocalPath('/wkprono/public/base/js/jquery/jquery-ui-1.10.2.custom.min.js');
-                $view->jQuery()->addStylesheet('/wkprono/public/base/js/jquery/css/'.$jqueryTheme.'/jquery-ui-1.10.2.custom.min.css');
-                $view->jQuery()->setLocalPath('/wkprono/public/base/js/jquery/jquery-1.9.1.js');
-                $view->jQuery()->setUiLocalPath('/wkprono/public/base/js/jquery/jquery-ui-1.10.2.custom.min.js');
+                //$view->jQuery()->addStylesheet('/ekprono/wkprono/public/base/js/jquery/css/'.$jqueryTheme.'/jquery-ui-1.10.2.custom.min.css');
+                //$view->jQuery()->setLocalPath('/ekprono/wkprono/public/base/js/jquery/jquery-1.9.1.js');
+                //$view->jQuery()->setUiLocalPath('/ekprono/wkprono/public/base/js/jquery/jquery-ui-1.10.2.custom.min.js');
+                $view->jQuery()->addStylesheet('/ekprono/wkprono/public/base/js/jquery/css/'.$jqueryTheme.'/jquery-ui-1.10.2.custom.min.css');
+                $view->jQuery()->setLocalPath('/ekprono/wkprono/public/base/js/jquery/jquery-1.9.1.js');
+                $view->jQuery()->setUiLocalPath('/ekprono/wkprono/public/base/js/jquery/jquery-ui-1.10.2.custom.min.js');
                 $view->addHelperPath('My/View/Helper/', 'My_View_Helper');
                 $view->jQuery()->enable();
                 $view->jQuery()->uiEnable();
